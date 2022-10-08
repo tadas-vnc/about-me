@@ -1,6 +1,6 @@
 $("#threelinesbox").click(function(){
     if ($("#threelines").css("rotate") == "180deg"){
-        $("#threelines").css("rotate", "0deg");
+        $("#threelines").css("rotate", "360deg");
         $("#menu").css("height", "0px");
         $("#menu").css("border-style", "");
     }else{
