@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper"></div>
+        <div>
+            <div id="threelinesbox"><div id="threelines"><div></div><div></div><div></div></div></div></div>
+            <div id="menu">
+                <a href="index.html" class="hyperlinks">Home</a>
+                <a href="about.html" class="hyperlinks">About</a>
+                <a href="projects.html" class="hyperlinks">Projects</a>
+                <a href="games.html" class="hyperlinks">Games</a>
+                <a href="socials.html" class="hyperlinks">Socials</a>
+            </div>
+        </div>
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div>
+        <h1 class="outline header">Projects</h1>
+        <div class="blockofcontent">
+        <div style="position: relative; left: -50%; transition: all 1s ease-in-out; opacity: 0%;" class="half">
+            <h2 class="outline smallheader">About me website</h2>
+            <p class="outline content">I decided to put this on top because its most recent one. It was done for a school project.</p>
+        </div>
+        <div class="half" style="float:right; position: relative; left: 50%; transition: all 1s ease-in-out; opacity: 0%;">
+            <img style="width: 90%; position: relative; left: 50%; translate: -50%; " src="Screenshot 2022-10-09 102117.png"></img>
+        </div></div>
+
+        <div class="blockofcontent">
+        <div class="half" style="float:left; position: relative;">
+            <img style="width: 90%; position: relative; left: 50%; translate: -50%;" src="Screenshot (18).png"></img>
+        </div>
+        <div style="position: relative; float: right;" class="half">
+            <h2 class="outline smallheader">Discord chat exporter</h2>
+            <p class="outline content">This was made with Python, all it does is it can export your selected direct messages, channel or group chat into one html file. It can be usefull incase you needed to archive chat without screenshotting. Source code will put on my personal github account.</p>
+        </div></div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+        <script src="main.js" ></script>
+        <script>
+            document.querySelectorAll(".half")[0].style.left = "0%";
+            document.querySelectorAll(".half")[1].style.left = "0%";
+            document.querySelectorAll(".half")[0].style.opacity = "100%";
+            document.querySelectorAll(".half")[1].style.opacity = "100%";
+        </script>
+    </body>
+</html>

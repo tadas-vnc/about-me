@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper"></div>
+        <div>
+            <div id="threelinesbox"><div id="threelines"><div></div><div></div><div></div></div></div></div>
+            <div id="menu">
+                <a href="index.html" class="hyperlinks">Home</a>
+                <a href="about.html" class="hyperlinks">About</a>
+                <a href="projects.html" class="hyperlinks">Projects</a>
+                <a href="games.html" class="hyperlinks">Games</a>
+                <a href="socials.html" class="hyperlinks">Socials</a>
+            </div>
+        </div>
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div>
+    <div class="cover" style="display: none;">
+        <p class="outline content" style="position:absolute; right: 0px; margin: 2%; font-size: 3rem;" onclick="$(this).parent().hide()">X</p>
+        <img style="position: fixed; left:50%; top:50%; width: 80%; translate: -50% -50%;" src=""></img>
+    </div>
+        <h1 class="outline header">Games</h1>
+        <h2 class="outline smallheader">Pixel Miner</h2>
+        <p class="outline content">This game is not done, but what ive made so far was made using Unity game engine. Code was written using Visual Studio Code and sprites were made using Paint.net .The objective of this game is to mine and upgrade so you can mine deeper.</p>
+        <div class="centerchildren">
+            <img class="smallimage" src="Screenshot 2022-10-09 212455.png"></img>
+            <img class="smallimage" src="Screenshot 2022-10-09 212520.png"></img>
+            <img class="smallimage" src="Screenshot 2022-10-09 212542.png"></img>
+            <img class="smallimage" src="Screenshot 2022-10-09 212603.png"></img>
+            <img class="smallimage" src="Screenshot 2022-10-09 213145.png"></img>
+        </div>
+        <h2 class="outline smallheader">Math guesser</h2>
+        <p class="outline content">This game was made all in HTML, CSS and JavaScript, the objective of this game is to guess correct math expression. If character lights up green after guessing that means its in expression and in correct possition. If its yellow, its in expression, but not correct position. Since its all just HTML, CSS and JS so you can actually try it out in this page down there.</p>
+        <iframe src="https://the2004.github.io/math-guesser/" style="width: 25%; aspect-ratio: 1/1; position: relative; left: 50%; translate: -50%;"></iframe>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+        <script src="main.js" ></script>
+        <script>
+            $(".smallimage").hover(
+            function() {
+                $(this).css("width", "20%");
+            }, function() {
+                $(this).css("width", "15%");
+            },
+
+            $(".smallimage").click(function(){
+                $(".cover").show();
+                document.querySelector(".cover").childNodes[3].src = this.src;
+            })
+);
+        </script>
+    </body>
+</html>
