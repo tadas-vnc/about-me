@@ -5,6 +5,9 @@
     background-size: 1800% 1800%;
     animation: rainbow 18s ease infinite;
 }
+
+
+
 @keyframes rainbow {
     0% {
         background-position: 0% 82%;
@@ -315,4 +318,30 @@
 .centerchildren{
     display: flex;
     justify-content: center;
+}
+
+#socials{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline;
+}
+
+.inl{
+    display: inline;
+}
+
+.shortabout{
+    width: 49%;
+    border-style: solid;
+    border-radius: 10vh;
+    border-color: white;
+    display: inline-grid;
+}
+
+#moreabout{
+    margin-top: 5px;
+    border-style: solid ;
+    border-color: white;
+    border-radius: 10vh;
 }
