@@ -5,7 +5,7 @@ $("#threelinesbox").click(function(){
         $("#menu").css("border-style", "");
     }else{
         $("#threelines").css("rotate", "180deg");
-        $("#menu").css("height", "200px");
+        $("#menu").css("height", "150px");
         $("#menu").css("border-style", "solid");
         
     }
