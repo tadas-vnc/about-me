@@ -272,15 +272,11 @@
 
 .smallimage{
     width: 15%;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     margin-left: 1%;
     margin-right: 1%;
-}
-
-.smallimage{
     cursor: pointer;
 }
-
 .cover{
     background-color: rgba(0, 0, 0, 0.308);
     width: 100%;
