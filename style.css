@@ -1,5 +1,5 @@
 
- #threelines, #menu {
+ #threelines, #menu, #portrainmenu {
 
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
@@ -145,60 +145,127 @@
 
 }
 
+
+@media (orientation: landscape){
+    
+    #threelinesbox{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 0px;
+        margin: 5px;
+        border-width: 5px;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+        top: -5px;
+    }
+
+    #threelines > div{
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        height: 10%;
+        margin-bottom: 15%;
+        margin-top: 15%;
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        border-radius: 25%;
+    }
+
+    #menu{
+        margin: 5px;
+        border-width: 5px;
+        border-color: white;
+        top: 70px;
+        position: fixed;
+        right: 0px;
+        height: 0px;
+        background-color: white;
+        transition: all 1s ease-in-out;
+        width: 150px;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    #threelines{
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        position: fixed;
+        right: 0px;
+        margin: 5px;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+    }
+}
+
+@media (orientation: portrait){
+    
+    #threelines{
+        background-color: white;
+        width: 12%;
+        aspect-ratio: 1;
+        border-radius: 4px;
+        position: fixed;
+        right: 0px;
+        margin: 5px;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+    }
+    #threelinesbox{
+        width: 50px;
+        aspect-ratio: 1;
+        position: fixed;
+        right: 0px;
+        margin: 5px;
+        border-width: 5px;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+        top: -5px;
+    }
+
+    #threelines > div{
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        height: 10%;
+        margin-bottom: 15%;
+        margin-top: 15%;
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        border-radius: 25%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #portrainmenu{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+    }
+    
+}
+
 #threelines{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
-    position: fixed;
-    right: 0px;
-    margin: 5px;
-    border-color: white;
-    border-width: 5px;
-    border-style: solid;
-    transition: all 1s ease-in-out;
-    z-index: 1;
+    opacity: 50%;
 }
 
-#threelinesbox{
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 0px;
-    margin: 5px;
-    border-width: 5px;
-    transition: all 1s ease-in-out;
-    z-index: 1;
-    top: -5px;
+#threelines:hover{
+    opacity: 100%;
 }
-
-#threelines > div{
-    width: 70%;
-    background-color: rgb(255, 255, 255);
-    height: 10%;
-    margin-bottom: 15%;
-    margin-top: 15%;
-    position: relative;
-    left: 50%;
-    translate: -50%;
-    border-radius: 25%;
-}
-
-#menu{
-    margin: 5px;
-    border-width: 5px;
-    border-color: white;
-    top: 70px;
-    position: fixed;
-    right: 0px;
-    height: 0px;
-    background-color: white;
-    transition: all 1s ease-in-out;
-    width: 150px;
-    overflow: hidden;
-    z-index: 2;
-}
-
 .hyperlinks{
     z-index: 1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
